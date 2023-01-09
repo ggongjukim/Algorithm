@@ -10,8 +10,8 @@ N,M = list(map(int, input().split()))
 graph = [[]for _ in range(N+1)]
 visited = [False for _ in range(N+1)] 
 visited[0] = True
-#stack =[]
-#result = []
+stack =[]
+result = []
 count = 0
 #print(graph)
 
@@ -24,18 +24,17 @@ for _  in range(M):
 
 # visited 가 모두 true 일때까지
 def DFS(current):
-    #result.append(current)
+    result.append(current)
     visited[current] = True
-    #while len(result) != 0:
-        #current = result.pop()
-    for i in graph[current]:
-        if not visited[i]:
-            DFS(i)
-            #visited[i] = True
-                #result.append(i)
+    while len(result) != 0:
+        current = result.pop()
+        for i in graph[current]:
+            if not visited[i]:
+                visited[i] = True
+                result.append(i)
     #print('result',result)
 
-for i in range(1, N+1):
+for i in range(N+1):
     if not visited[i]:
         count +=1
         DFS(i)

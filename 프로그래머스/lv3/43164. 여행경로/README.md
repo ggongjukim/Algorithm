@@ -2,6 +2,11 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43164#qna) 
 
+### :collision: 느낀점
+graph 를 딕셔너리 형태로 짠건 잘한듯       
+이문제는 한붓그리기가 핵심이다       
+`한붓그리기 = stack + DFS`
+
 ### 성능 요약
 
 메모리: 10.3 MB, 시간: 0.01 ms

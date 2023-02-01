@@ -9,8 +9,14 @@ B = list(map(int,input().split()))
 
 # print(A,B)
 heapq.heapify(A)
-B = sorted(B, reverse=True)
+# B = sorted(B, reverse=True)
 S = 0
-for i in range(N):
-    S += heapq.heappop(A) * B[i]
+# print(B.index(min(B)))
+
+while B:
+
+    maxidx = B.index(max(B))
+    S += heapq.heappop(A) * max(B)
+    B = B[:maxidx] +B[maxidx+1:]
+    # print(maxidx,B)
 print(S)

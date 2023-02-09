@@ -2,6 +2,11 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/49993) 
 
+### :collision: 느낀점
+단순 구현 인거같음
+
+### :collision: 단순 구현
+
 ### 성능 요약
 
 메모리: 10.1 MB, 시간: 0.04 ms

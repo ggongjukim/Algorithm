@@ -2,6 +2,10 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12982) 
 
+### :collision: 탐욕법
+최대한 많이 => 탐욕 힌트   
+정렬과 관계가 많다
+
 ### :collision: 느낀점
 예외처리가 중요한 문제!     
 budget이 d의 모든 예산을 감당할 만큼 클수도있다!     

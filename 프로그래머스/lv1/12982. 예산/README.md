@@ -2,6 +2,12 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12982) 
 
+### :collision: 느낀점
+예외처리가 중요한 문제!     
+budget이 d의 모든 예산을 감당할 만큼 클수도있다!     
+budget이 0 보다 크면 d에서 가장 작은 값을 넣고 그래도 budget이 음수값이 되지 않으면 answer +=1 을 하는 방식으로 해야한다!
+
+
 ### 성능 요약
 
 메모리: 10.1 MB, 시간: 0.03 ms

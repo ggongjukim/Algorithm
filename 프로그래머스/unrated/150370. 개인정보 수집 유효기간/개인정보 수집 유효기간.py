@@ -15,7 +15,7 @@ def solution(today, terms, privacies):
         # print(y,m,d)
         # 각각의 duedate 구하기
         term = due[name]
-        if term >= 12: term = [term//12,term%12,-1]
+        if term >= 12: term = [term//12,term%12,-1] #여기서 틀렸심!!
         else: term = [0,term,-1]
         
         #년도 구하기 

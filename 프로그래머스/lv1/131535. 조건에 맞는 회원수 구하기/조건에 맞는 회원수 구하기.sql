@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+SELECT
+    COUNT(*) AS USERS
+FROM USER_INFO
+WHERE AGE IS NOT NULL and AGE <= 29 and AGE >= 20 and 
+        DATE_FORMAT(JOINED, "%Y") = 2021

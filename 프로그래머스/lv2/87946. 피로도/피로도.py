@@ -1,10 +1,13 @@
 def sol(cnt,dungeons,k):
     global answer
-#     if cnt == len(dungeons):
-#         answer = max(answer, cnt)
-#         return
-    if cnt > answer:
-        answer = cnt
+    answer = max(answer, cnt)
+
+    # if cnt == len(dungeons):
+    #     answer = max(answer, cnt)
+    #     # return
+    # if cnt > answer:
+    #     answer = cnt
+    #     # return
         
     for i in range(len(dungeons)):
         if k < dungeons[i][0]:

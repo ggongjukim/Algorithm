@@ -8,9 +8,8 @@ n = int(input())
 num_arr = list(map(int,input().split()))
 cal = list(map(int,input().split()))
 cal_arr = []
-max_num = 1000000000
-min_num = -1000000000
-answer =[]
+max_num = -1000000000
+min_num = 1000000000
 for i in range(4):
   if i == 0:
     temp = '+'
@@ -26,6 +25,7 @@ for i in range(4):
 visited = [False] * len(cal_arr)
 
 def print_cal():
+  global max_num, min_num
   temp = num_arr[0]
   for i in range(1,len(num_arr)):
     if cal_ans[i-1] == "+":
@@ -41,7 +41,11 @@ def print_cal():
         temp *= -1
       else:
         temp = temp // num_arr[i]
-  answer.append(temp)
+  # answer.append(temp)
+  if temp > max_num:
+    max_num = temp
+  if temp < min_num:
+    min_num = temp
   return
   
 cal_ans =[]
@@ -59,5 +63,5 @@ def sol(cur_num):
     visited[i] = False
 sol(0)
 
-print(max(answer))
-print(min(answer))
+print(max_num)
+print(min_num)

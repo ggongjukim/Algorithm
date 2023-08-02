@@ -3,11 +3,11 @@ def solution(tickets):
     answer = []
     graph = {}
     tickets = sorted(tickets,reverse=True)
-    # print(tickets)
+    # print('tickets ', tickets)
     for i in tickets:
         try :graph[i[0]].append(i[1])
         except : graph[i[0]] = [i[1]] 
-    # print(graph)
+    #print('graph',graph)
     stack = ["ICN"]
     path = []
     

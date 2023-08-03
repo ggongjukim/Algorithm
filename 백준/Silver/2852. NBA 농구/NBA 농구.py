@@ -15,11 +15,10 @@ arr.append([-1,2880]) # 마지막 추가
 for i in range(1, len(arr)):
   w = 0
   time = arr[i][1] - arr[i-1][1] # 간격
-  # print('i',arr[i])
   
   if arr[i-1][0] in score.keys():
     score[arr[i-1][0]] += 1
-  # print('score',score)
+
   
   if score[1] > score[2]:
     w = 1
@@ -30,8 +29,6 @@ for i in range(1, len(arr)):
   
   timescore[w] += time
 
-  # print(timescore)
-  # print("---------------")
   
 for i in timescore.values():
   # print(i)

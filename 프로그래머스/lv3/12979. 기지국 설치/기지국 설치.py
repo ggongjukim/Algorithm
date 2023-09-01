@@ -1,4 +1,5 @@
 import math
+# 투포인터...?
 def solution(n, stations, w):
     answer = 0
     s = 0 

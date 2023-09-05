@@ -3,9 +3,7 @@ def solution(s):
   minlen = len(s)
   # print('len(s)',len(s))
   for k in range(1,len(s)//2+1): # 2부터 절반까지 
-    arr = []
     total = 1
-    count = 0
     compare = s[0:k]
     finish=''
 
@@ -22,7 +20,5 @@ def solution(s):
         compare = s[i:i+k]
         total = 1
 
-    result = len(finish)
-    if minlen > result:
-      minlen = result
+    minlen = min(len(finish),minlen)
   return minlen

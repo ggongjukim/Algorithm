@@ -80,7 +80,7 @@ def make_curv(x,y,d,g):
     for i in range(g): # 세대 만큼 반복
         mx,my = arr[-1] # 넣는 순서가 중요하다
         # arr에서 마지막 배열 빼고 90 회전해서  
-        for a in range(len(arr)-2,-1,-1):
+        for a in range(len(arr)-2,-1,-1): # 꺼꾸로 집어넣기
             lx,ly = arr[a]
             dx, dy = mx- lx, my-ly
             dx, dy = dy,  dx*-1
